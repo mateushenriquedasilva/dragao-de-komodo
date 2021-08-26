@@ -1,0 +1,125 @@
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #5F7285;
+}
+
+h1, h2 {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+p {
+    color: #FFF;
+}
+
+header#cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    background-color: #6D8796;
+    padding: 1vh;
+}
+
+section#dragao_de_komodo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    padding: 2vw;
+}
+
+section#dragao_de_komodo img {
+    border-radius: 5%;
+    margin: 1.5vw;
+    border: dashed 2px#829DAD;
+}
+
+input[type="button"]{
+    width: 200px;
+    height: 30px;
+    background-color: #829DAD;
+    border: none;
+    color: white;
+}
+
+input[type="button"]:hover{
+    box-shadow: 2px 2px black;
+    background-color: #36B0E0;
+}
+
+section#dragao_de_komodo > article.dragao_de_komodo {
+    max-width: 30vw;
+    margin-top: 5vh;
+}
+
+article.dragao_de_komodo img {
+    margin: 15px 0 !important;
+}
+
+
+footer {
+    background-color: #6D8796;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (max-width: 480px){
+    section#dragao_de_komodo img {
+        width: 90vw;
+    }
+
+    section#dragao_de_komodo > article.dragao_de_komodo {
+        min-width: 90vw;
+    }
+
+    input[type="button"]{
+        box-shadow: 2px 2px black;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 991px){
+    section#dragao_de_komodo img {
+        width: 50vw;
+    }
+
+    section#dragao_de_komodo > article.dragao_de_komodo {
+        max-width: 50vw;
+    }
+
+    section#dragao_de_komodo > h2{
+        font-size: 5vw;
+    }
+}
+
+@media (min-width:  991px) and (max-width: 1200px){
+    section#dragao_de_komodo img {
+        width: 50vw;
+    }
+
+    section#dragao_de_komodo > h2{
+        font-size: 5vw;
+    }
+
+    section#dragao_de_komodo > article.dragao_de_komodo {
+        width: 50vw;
+    }
+}
+
+@media (min-width: 1200px){
+    section#dragao_de_komodo img {
+        width: 30vw;
+    }
+
+    section#dragao_de_komodo > h2{
+        font-size: 2vw;
+    }
+
+    
+}
